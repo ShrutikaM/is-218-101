@@ -1,7 +1,7 @@
 <?php
 
-
-echo "<html><body><table>\n\n";
+$html = '<table border=1>';
+echo "<html><body><table border=1>\n\n";
 $f = fopen("carSamples.csv", "r");
 while (($line = fgetcsv($f)) !== false) {
         echo "<tr>";
@@ -11,6 +11,6 @@ while (($line = fgetcsv($f)) !== false) {
         echo "</tr>\n";
 }
 fclose($f);
-echo "\n</table></body></html>";
+echo "\n</table border=1></body></html>";
 
 ?>
